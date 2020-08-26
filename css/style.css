@@ -1,0 +1,43 @@
+.start{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    position: relative;
+    z-index: 999;
+    background:linear-gradient(45deg,rgba(160,32,240,0.8),rgba(72,61,139,0.5),rgba(176,196,222,0.5));
+}
+.a1{
+text-align: center;
+    color:rgb(44,84,84);
+    font-weight: bold;
+    font-size: large;
+}
+.start_one{
+    display:grid;
+    grid-template-rows:repeat(2,auto);
+    position:relative;
+}
+.title{
+    text-align: center;
+    font-size:48px;
+    font-weight: bold;
+    color: gainsboro;
+}
+.icon{
+    position: relative;
+    height: 50px;
+    width: 50px;
+    color: gainsboro;
+}
+.developer{
+    font-size: 26px;
+    color:gainsboro;
+    text-align: center;
+    margin-top: 15px;
+    font-family: "Noto Sans ExtCond Med";
+
+}
