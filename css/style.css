@@ -1,6 +1,6 @@
 /*首页css*/
 .start{
-    height: 100vh; /*高度和屏幕高度一致*/
+    height: 80vh; /*高度和屏幕高度一致*/
     width: 100%;
     display: flex;/*使用flex布局，比较容易实现垂直居中*/
     align-items: center;
