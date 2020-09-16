@@ -14,6 +14,11 @@ divfather.appendChild(divtop);
 divfather.appendChild(divcenter);
 divfather.appendChild(divbotton);
 
+//标记线
+var zhi=document.createElement('label');
+divcenter.appendChild(zhi);
+zhi.setAttribute("class","zhiy");
+zhi.innerHTML="高度"
 //画网格
 var canvas=document.createElement('canvas');
 divcenter.appendChild(canvas);
@@ -49,7 +54,7 @@ function drawGrid(stepX, stepY, color, lineWidth){
     // 清除路径
     context.beginPath();
 }
-drawGrid(10, 10, 'lightgray', 0.5);
+drawGrid(10, 10, 'block', 0.5);
 function drawAxes(origin, x_Len, y_Len, color, lineWidth){
 
     // 创建水平坐标轴路径
@@ -81,5 +86,40 @@ function drawAxes(origin, x_Len, y_Len, color, lineWidth){
     // 清除路径
     context.beginPath();
 }
-drawAxes([0, 790], 1920, 800, 'blue', 2);
+drawAxes([0, 800], 1920, 800, 'blue', 2);
+
+
+var scrollFunc = function (e) {
+    e = e || window.event;
+    if (e.wheelDelta) {  //判断浏览器IE，谷歌滑轮事件
+        if (e.wheelDelta > 0) { //当滑轮向上滚动时
+                                //                      var userops=document.getElementsByClassName("user-ops")[0];
+            //                    userops.style.bottom=15+'px';
+            zhi.innerHTML=document.body.clientHeight-window.pageYOffset-zhi.offsetTop;
+        }
+        if (e.wheelDelta < 0) {
+//                        var userops=document.getElementsByClassName("user-ops")[0];
+//                        userops.style.bottom=-59+'px';
+            zhi.innerHTML=document.body.clientHeight-zhi.offsetTop-window.pageYOffset;
+        }
+    } else if (e.detail) {  //Firefox滑轮事件
+        if (e.detail> 0) { //当滑轮向上滚动时
+//                        var userops=document.getElementsByClassName("user-ops")[0];
+//                        userops.style.bottom=15+'px';
+            zhi.innerHTML=document.body.clientHeight-zhi.offsetTop-window.pageYOffset;
+        }
+        if (e.detail< 0) { //当滑轮向下滚动时
+//                        var userops=document.getElementsByClassName("user-ops")[0];
+//                        userops.style.bottom=-59+'px';
+            zhi.innerHTML=document.body.clientHeight-zhi.offsetTop-window.pageYOffset;
+        }
+    }
+}
+//给页面绑定滑轮滚动事件
+if (document.addEventListener) {//firefox
+    document.addEventListener('DOMMouseScroll', scrollFunc, false);
+}
+//滚动滑轮触发scrollFunc方法  //ie 谷歌
+window.onmousewheel = document.onmousewheel = scrollFunc;
+
 

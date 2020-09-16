@@ -14,7 +14,16 @@
     background-color: #940002;
 }
 .pen{
-    background-color: #044154;
     width: 100%;
     height: 800px;
+}
+.zhiy{
+    height: 50px;
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.5);
+
+    width: 100%;
+    position: fixed;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
 }
