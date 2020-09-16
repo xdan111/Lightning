@@ -18,7 +18,6 @@ divfather.appendChild(divbotton);
 var zhi=document.createElement('label');
 divcenter.appendChild(zhi);
 zhi.setAttribute("class","zhiy");
-zhi.innerHTML="高度"
 //画网格
 var canvas=document.createElement('canvas');
 divcenter.appendChild(canvas);
@@ -89,29 +88,30 @@ function drawAxes(origin, x_Len, y_Len, color, lineWidth){
 drawAxes([0, 800], 1920, 800, 'blue', 2);
 
 
+
 var scrollFunc = function (e) {
     e = e || window.event;
     if (e.wheelDelta) {  //判断浏览器IE，谷歌滑轮事件
         if (e.wheelDelta > 0) { //当滑轮向上滚动时
                                 //                      var userops=document.getElementsByClassName("user-ops")[0];
             //                    userops.style.bottom=15+'px';
-            zhi.innerHTML=document.body.clientHeight-window.pageYOffset-zhi.offsetTop;
+            zhi.innerHTML=document.body.clientHeight-window.pageYOffset-zhi.offsetTop+" METERS HIGH";
         }
         if (e.wheelDelta < 0) {
 //                        var userops=document.getElementsByClassName("user-ops")[0];
 //                        userops.style.bottom=-59+'px';
-            zhi.innerHTML=document.body.clientHeight-zhi.offsetTop-window.pageYOffset;
+            zhi.innerHTML=document.body.clientHeight-zhi.offsetTop-window.pageYOffset+" METERS HIGH";
         }
     } else if (e.detail) {  //Firefox滑轮事件
         if (e.detail> 0) { //当滑轮向上滚动时
 //                        var userops=document.getElementsByClassName("user-ops")[0];
 //                        userops.style.bottom=15+'px';
-            zhi.innerHTML=document.body.clientHeight-zhi.offsetTop-window.pageYOffset;
+            zhi.innerHTML=document.body.clientHeight-zhi.offsetTop-window.pageYOffset+" METERS HIGH";
         }
         if (e.detail< 0) { //当滑轮向下滚动时
 //                        var userops=document.getElementsByClassName("user-ops")[0];
 //                        userops.style.bottom=-59+'px';
-            zhi.innerHTML=document.body.clientHeight-zhi.offsetTop-window.pageYOffset;
+            zhi.innerHTML=document.body.clientHeight-zhi.offsetTop-window.pageYOffset+" METERS HIGH";
         }
     }
 }
