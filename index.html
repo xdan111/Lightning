@@ -4,12 +4,34 @@
     <meta charset="UTF-8">
     <title>Lightning Adventure</title>
     <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script src="./js/d3.v4.min.js"></script>
+    <script type="text/javascript">
+        //获取csv对象
+        arrx=[];
+        arry=[];
+        arrluj=[];
+        d3.csv("aaa.csv",function(error,csvdata){
+            if(error){
+                console.log(error);
+            }
+            console.log(csvdata);
+            //输出csv内容s
+            for( var i=0; i<csvdata.length; i++ ){
+                arrx[i]= csvdata[i].x;
+                arry[i]= csvdata[i].y;
+                arrluj[i]= csvdata[i].luj;
+            }
+            mainx();
+            mainy();
+            mainluj();
+        });
+    </script>
 </head>
-
 <body>
-
-<div id="root"></div>
-
+<label class="zhiy" id="zhiy"></label>
+<div class="root"></div>
+<canvas id="canvas" width="1200" height="10000" class="canvas">
+</canvas>
 </body>
-<script type="text/javascript" src="./js/main.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
 </html>
