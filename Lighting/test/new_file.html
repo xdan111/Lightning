@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link href="css/new_file.css" rel="stylesheet" type="text/css">
+		<script src="./jjs/d3.v4.min.js"></script>
+		<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css'>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<label class="zhiy" id="zhiy"></label>
+		<div class="root" id="rt">
+			<label class="labs">Lightning Touches Sky</label>
+			<div class="rt3">
+				<div class="p_1">
+					<p>Lightning is the greateast light show on our planet Earth.
+					<p>Lightning is a bright flash of electricity produced by a thunderstorm. All thunderstorms produce lightning and are very dangerous.
+				</div>
+				<p>For your safety, please read this:
+				<img src="img/link.svg" alt="" width="20px" height="20px" class="svg1"/> 
+				<a href="lightningsafety.html">Lightning Safety Tips</a>
+				</p>
+			</div>
+			<div class="rt2">
+				<label class="lab2">Made with&nbsp;</label>
+				<img src="img/heart.svg" alt="" width="20px" height="20px"/> 
+				<label class="lab2">&nbsp; by Hawken</label>
+			</div>
+			<div class="rt3">
+				<label class="lb3">Programed by Yuan, Dan, Hawken / Illustrated by Dan, Hawken</label>
+			</div>
+		</div>
+		<div class="rootend">
+			<img alt="The ocean bottom" src="./img/ocean-bottom-top.svg" class="sc-fzqNqU kikdAh">
+		</div>
+		<div class="city"></div>
+		<div><canvas id="canvas" width="1600px" height="22000px" class="canvas"></canvas></div>
+		
+		<!-- <div class="background" id="bg">
+		<canvas class="can" id="can"></canvas>
+		<script  src="js/index.js"></script>
+		</div> -->
+		<script type="text/javascript" src="js/new_file.js"></script>	
+		<script type="text/javascript" src="js/background.js"></script>
+		<script type="text/javascript">
+	    //获取csv对象
+		arrx=[];
+		arry=[];
+		arrluj=[];
+		arrw=[];
+		arrh=[];
+		d3.csv("aaa.csv",function(error,csvdata){
+	        if(error){
+	            console.log(error);
+	        }
+	        console.log(csvdata);
+	        //输出csv内容s
+	        for( let i=0; i<csvdata.length; i++ ){
+	            arrx[i]= csvdata[i].x;
+	            arry[i]= csvdata[i].y;
+	            arrluj[i]= csvdata[i].luj;
+				arrw[i]=csvdata[i].width;
+				arrh[i]=csvdata[i].height;
+	        }
+			//console.log("main++"+arrx[0]);
+			main();
+		/*	mainy();
+			mainluj();*/
+	    });	
+		function main() {
+   //在canvas中画图片
+	console.log(arrx+arry);
+   //遍历序号，将图片放入Rarr中
+   let canvas = document.getElementById("canvas");
+   let ctx = canvas.getContext("2d");
+   for (let i = 0; i < arrx.length; i++) {
+    let a=arrx[i];
+	   let b=arry[i];
+	   let n=arrluj[i];
+	   let w=arrw[i];
+	   let h=arrh[i];
+	   let img = new Image();
+    img.src = n;
+	   console.log(n);
+    img.onload = function() {
+     //只能在这个地方画图，出了IIFE Rarr数组为空
+     ctx.drawImage(img,a,b, w, h)
+    },1000
+
+   }
+  }
+	</script>
+		<script>
+		//通过scrollTo将窗口定位到底部，document.body.scrollHeight是网页正文全文高;
+		window.scrollTo(0,document.body.scrollHeight)
+		</script>
+</body>
+</html>
