@@ -1,7 +1,7 @@
 x,y,luj,width,height
 0,21500,./img/cat.png,1883,1963
 0,2000,./img/line.png,1600,160
-700,2050,./img/line1.png,600,120
+950,2000,./img/line1.png,600,120
 900,20230,./img/everest.png,600,360
 1050,20150,./img/everest1.png,400,80
 100,19680,./img/airplane.png,600,180
@@ -25,11 +25,11 @@ x,y,luj,width,height
 500,6280,./img/ncloud1.png,600,120
 200,17670,./img/balloon.png,480,720
 200,18250,./img/balloon1.png,600,120
-150,2100,./img/sprite.png,400,1400   
+270,2240,./img/sprite.png,484,1694   
 -100,21850,./img/cgzigzag.png,300,300
 1400,21850,./img/ball.png,100,100
 800,13200,./img/bluejet.png,300,700
-0,2000,./img/elve.png,768,420 
+0,1980,./img/elve.png,1078,718 
 1000,21840,./img/cgbeaded.png,320,175
 1200,21830,./img/cgforked.png,320,175
 100,21830,./img/cgribbon.png,320,175
