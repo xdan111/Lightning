@@ -11,17 +11,24 @@ body{
 	text-align: center;	
 
  }
- .city{
+ .canva{
 	 width:100%;
 	 height:22000px;
-	 position: absolute;
  }
 .canvas{
-/* 	width: 100%;
-	height: 70000px;
-	 */
+/* 	width: 100%;	 */
 	position: absolute;
 	z-index: 2;
+}
+.end{
+	width:100%;
+	height:400px;
+	background-image: url(../img/end.jpg);
+	background-size: 100% 400px;
+	text-align: center;
+	font-size: 40px;
+	color: #FFFFFF;
+	font-weight: 600;
 }
 .background{
 	width: 100%;
@@ -33,7 +40,7 @@ body{
 .zhiy{
 	color: #ffffff;
 	margin-top: 620px;
-	border-top: 1px dashed rgba(255, 255, 255, 0.5);
+	/* border-top: 1px dashed rgba(255, 255, 255, 0.5); */
 	z-index: 3;
 	width: 100%;
 	position: fixed;
@@ -41,7 +48,7 @@ body{
 	font-size: 30px;
 	font-weight: bold;
 }
-
+}
 .sc-fzqNqU{
 	transform: rotate(180deg);
 	margin-top: -1px;
@@ -74,4 +81,11 @@ body{
 
 .p_1{
 	margin: auto 80px;
+}
+.p_2{
+	padding-top: 140px;
+	margin:0 20px;
+}
+.p_3{
+	margin: 20px;
 }
