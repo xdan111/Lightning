@@ -17,20 +17,21 @@
  margin-right:100px;
 }
 .card{
-	height:1350px;
-	width:600px;
+	height:800px;
+	width:1000px;
 	background-color: #FFFFFF;
 	background-clip: border-box;
 	border: 3px dotted #9dc6ff;
 	border-radius: 7px;
-	    box-shadow: 1px 1px 2px #a7a8ad;
+	box-shadow: 1px 1px 2px #a7a8ad;
+	margin: 50px auto;
 }
 .left{
  margin-left: 100px;
  float: left;
 }
 .title_div1{
-	width: 600px;
+	width: 1000px;
 	font-size: 20px;
 	font-weight: bold;
     background-color: #f1eefc; 
@@ -49,17 +50,28 @@
 }
 
 .title_div2{
-	width: 550px;
+	width: 850px;
 	margin:20px 25px;
 }
 
 .content{
 	margin:0px 25px;
 }
+.content1{
+	margin:30px 50px;
+}
 .foot{
 	width: 100%; 
 	height: 200px;
 	clear: both; 
 	text-align: center;
-	padding-top: 100px;
+	padding-top: 200px;
+}
+.attention{
+	width: 100%;
+	height: 100px;
+	clear: both; 
+	margin-left: 75px;
+	padding-top: 30px;
+	color: crimson;
 }
