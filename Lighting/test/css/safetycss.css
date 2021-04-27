@@ -1,0 +1,97 @@
+.title{
+	margin-top: 50px;
+	font-size: 40px;
+	text-align: center;
+	color: #FFFFFF;
+}
+.head{
+	text-align: center;
+}
+.main{
+	margin-top: 100px;
+}
+.content{
+		text-align: center;
+		margin:20px auto 0 300px;
+		width: 600px;
+		height: 100px;
+		background: #FFFFFF;
+		border-radius: 10px;
+		border-style:solid;
+		border-color: #FFFFFF;
+		position: absolute;
+	
+	}
+.content:before {
+		content: "";
+		width: 0;
+		height: 0;
+		position: absolute;
+		left: 600px;
+		top: 40px;
+		border-left: 20px solid #FFFFFF;
+		border-bottom: 10px solid transparent;
+		border-top: 10px solid transparent;	
+			}
+.teacher{
+	margin:50px auto 0 1000px;
+	}
+	.sentence{
+		font-size: 24px;
+		margin-top:15px;
+		color: #FFFFFF;
+	}
+	.sentence1{
+		font-size: 24px;
+		margin-top:15px;
+	}
+	.content1{
+		position: absolute;
+		margin: 100px 200px;
+		width: 500px;
+		
+	}
+.boy{
+	margin-left: 700px;
+}
+.boy1{
+	margin-left: 200px;
+	position: absolute;
+}
+.content2{
+	position: absolute;
+	margin: 100px 800px;
+	width: 500px;
+}
+.content3{
+	position: absolute;
+	margin: 500px 200px;
+	width: 500px;
+}
+.car{
+	margin: 300px 700px;
+	position: absolute;
+	
+}
+.distance{
+	margin: 800px 200px;
+	position: absolute;
+}
+.content4{
+	position: absolute;
+	margin: 850px 700px;
+	width: 700px;
+}
+.content4 p{
+	line-height: 40px;
+}
+.content5{
+	position: absolute;
+	margin: 1450px 600px;
+	width: 700px;
+}
+.lamp{
+	position: absolute;
+	margin: 1400px 400px;
+	width: 700px;
+}

@@ -1,5 +1,4 @@
 x,y,luj,width,height
-0,21500,./img/cat.png,1883,1963
 0,2000,./img/line.png,1600,160
 950,2000,./img/line1.png,600,120
 900,20230,./img/everest.png,600,360
@@ -32,15 +31,14 @@ x,y,luj,width,height
 0,1960,./img/elve.png,1078,718 
 800,21840,./img/cgbeaded.png,320,200
 1050,21835,./img/cgforked.png,288,180
-80,21745,./img/cgribbon.png,320,300
-370,21645,./img/ccspider.png,200,300
+250,21700,./img/ccspider.png,300,200
 750,21924,./img/empire.png,50,76
 580,21930,./img/empire1.png,200,50
 800,21834,./img/khalifa.png,100,166
 850,21860,./img/khalifa1.png,200,50
 600,21840,./img/khalifa2.png,250,50
-0,21500,./img/city.png,1600,500
 100,6300,./img/giganticjet.png,300,600
+0,21500,./img/city.png,1600,500
 
 
 
