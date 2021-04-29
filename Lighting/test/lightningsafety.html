@@ -4,6 +4,29 @@
 		<meta charset="utf-8">
 		<title></title>
 		<link href="css/safetycss.css" rel="stylesheet" type="text/css">
+		<script>
+		var list=[
+			'img/teacher.png',
+			'img/boy.png',
+			"img/boy1.png",
+			'img/car.png' ,
+			'img/distance.png',
+			'img/lamp.png'
+		        ];  
+		let len = list.length;		
+		/**
+		 * 遍历imgs数组，将所有图片加载出来
+		 * 可以通过控制台查看网络请求，会发现所有图片均已加载
+		 */
+		for (let i = 0; i < len; i++) {
+		    let imgObj = new Image(); // 创建图片对象
+		    imgObj.src = list[i];
+		
+		    imgObj.addEventListener('load', function () { // 这里没有考虑error，实际上要考虑
+		        console.log('list' + i + '加载完毕');
+		    }, false);
+		}	
+		</script>
 	</head>
 	<body bgcolor="#021B43">
 		<div class='title'> Lightning Safety Tips	</div>
